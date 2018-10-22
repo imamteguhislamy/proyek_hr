@@ -17,15 +17,16 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="title">Edit Fungsi Jabatan</h5>
+                        <h5 class="title">Edit Tujuan SOP</h5>
                     </div>
                     <div class="card-body">
                         <form>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label>Fungsi Jabatan Baru</label>
-                                        <textarea type="text" class="form-control" placeholder="Fungsi Jabatan 1" value="Fungsi Jabatan 1"></textarea>
+                                        <label>Tujuan SOP Baru</label>
+                                        <textarea type="text" class="form-control" placeholder="SOP 1" value="Tujuan SOP 1"></textarea>
+                                        <textarea type="text" class="form-control" placeholder="SOP 2" value="Tujuan SOP 2"></textarea>
                                     </div>
                                     <div style="margin-bottom: 5px; margin-right: 25px" align="right">
                                         <a href="<?php echo base_url()?>user/detail_jabatan" class="btn btn-round btn-primary">Simpan</a>

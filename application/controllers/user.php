@@ -42,19 +42,35 @@ class user extends CI_Controller {
 		$this->load->view('user/footer');
 	}
 
-	public function edit_identitas()
+	public function edit_tujuansop()
 	{
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
-		$this->load->view('user/edit_identitas');
+		$this->load->view('user/edit_tujuansop');
 		$this->load->view('user/footer');
 	}
 
-	public function edit_jobdesk()
+	public function edit_uraiansop()
 	{
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
-		$this->load->view('user/edit_jobdesk');
+		$this->load->view('user/edit_uraiansop');
+		$this->load->view('user/footer');
+	}
+
+	public function edit_namasop()
+	{
+		$this->load->view('user/sidebar');
+		$this->load->view('user/header');
+		$this->load->view('user/edit_namasop');
+		$this->load->view('user/footer');
+	}
+
+	public function edit_fungsijabatan()
+	{
+		$this->load->view('user/sidebar');
+		$this->load->view('user/header');
+		$this->load->view('user/edit_fungsijabatan');
 		$this->load->view('user/footer');
 	}
 
