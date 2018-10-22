@@ -22,7 +22,7 @@ class user extends CI_Controller {
 	{
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
-		$this->load->view('user/home');
+		$this->load->view('user/daftar_jabatan');
 		$this->load->view('user/footer');
 	}
 

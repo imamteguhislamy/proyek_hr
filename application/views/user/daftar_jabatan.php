@@ -16,23 +16,17 @@
                 	<!-- <div class="table-responsive"> -->
 	                  	<table class="table">
 		                    <thead class=" text-primary">
-		                     	<th>Nama Pegawai</th>
-		                      	<th>Jabatan</th>
-		                      	<th>Unit Kerja</th>
-		                      	<th align="justify-content-end">Action</th>
+		                      	<th>Nama Jabatan</th>
+		                      	<th>Bagian</th>
+		                      	<th>Unit</th>
+		                      	<th>Kode Bagian</th>
 		                    </thead>
 		                    <tbody>
 		                      	<tr>
-		                        	<td>Imam Teguh Islamy</td>
-		                        	<td>Front-End Developer</td>
-		                        	<td>Surabaya</td>
-		                        	<td align="justify-content-end"><a href="<?php echo base_url()?>user/detail_jabatan"><i class="now-ui-icons ui-1_zoom-bold"></a></td>
-		                      	</tr>
-		                      	<tr>
-		                        	<td>Rahardhiwardaya Muhammad</td>
-		                        	<td>Back-End Developer</td>
-		                        	<td>Surabaya</td>
-		                        	<td align="justify-content-end"><a href="#"><i class="now-ui-icons ui-1_zoom-bold"></a></td>
+		                        	<td><a href="<?php echo base_url()?>user/detail_jabatan">Nama Jabatan 1</a></td>
+		                        	<td>Bagian 1</td>
+		                        	<td>Unit 1</td>
+		                        	<td>Kode Bagian 1</td>
 		                      	</tr>
 		                    </tbody>
 	                 	</table>

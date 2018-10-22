@@ -16,69 +16,89 @@
         <div class="row">
 
             <!-- Identitas Pegawai -->
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card">
                   	<div class="card-header">
-                    	<h4 class="card-title"> Identitas Pegawai</h4>
+                    	<h4 class="card-title"> Fungsi Utama Jabatan</h4>
                   	</div>
                   	<div class="card-body">
                     	<!-- <div class="table-responsive"> -->
-                        <table>
-                            <tr>
-                                <th>Nama Pegawai</th>
-                                <td>:</td>
-                                <td>Imam Teguh Islamy</td>
-                            </tr>
-                            <tr>
-                                <th>Nama Jabatan</th>
-                                <td>:</td>
-                                <td>Front-End Developer</td>
-                            </tr>
-                            <tr>
-                                <th>Unit Kerja</th>
-                                <td>:</td>
-                                <td>Surabaya</td>
-                            </tr>
-                        </table>
-                        <div style="margin-bottom: 5px; margin-right: 25px" align="right">
-                            <a href="<?php echo base_url()?>user/edit_identitas" class="btn btn-round btn-primary">Edit Identitas Pegawai</a>
-                        </div>
+                        <p>Fungsi Utama Jabatan saya Adalah xxxxxxx...........</p>
                     	<!-- </div> -->
                   	</div>
                 </div>
             </div>
             <!-- End Identitas Pegawai -->
-
+        </div>
+        <div class="row">
             <!-- Job Description -->
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header ">
-                        <h4 class="card-title">Job Description</h4>
+                        <h4 class="card-title">Nama SOP</h4>
+                    </div>
+                    <div class="card-body ">
+                        <!-- <div class="table-full-width table-responsive"> -->
+                            <p>Nama SOP saya Adalah......................</p>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header ">
+                        <h4 class="card-title">Tujuan SOP</h4>
                     </div>
                     <div class="card-body ">
                         <!-- <div class="table-full-width table-responsive"> -->
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td class="text-left">Jobdesk 1</td>
+                                        <td class="text-left">Tujuan SOP 1</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-left">Jobdesk 2</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-left">Jobdesk 3</td>
+                                        <td class="text-left">Tujuan SOP 2</td>
                                     </tr>
                                 </tbody>
                             </table>
                         <!-- </div> -->
-                        <div style="margin-bottom: 5px; margin-right: 25px" align="right">
-                            <a href="<?php echo base_url()?>user/edit_jobdesk" class="btn btn-round btn-primary">Edit Job Description</a>
-                        </div>
                     </div>
                 </div>
             </div>
             <!-- End Job Description -->
+
+            <!-- Job Description -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header ">
+                        <h4 class="card-title">Uraian Singkat Prosedur</h4>
+                    </div>
+                    <div class="card-body ">
+                        <!-- <div class="table-full-width table-responsive"> -->
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-left">Uraian Singkat Prosedur ...............</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header ">
+                        <h4 class="card-title">Lampirkan SOP</h4>
+                    </div>
+                    <div class="card-body ">
+                        <!-- <div class="table-full-width table-responsive"> -->
+                           
+                        <!-- </div> -->
+                    </div>
+                </div>                
+            </div>
+            <!-- End Job Description -->
         
+        </div>
+        <div style="margin-bottom: 5px; margin-right: 25px;" align="right" >
+            <a href="<?php echo base_url()?>user/edit_jobdesk" class="btn btn-round btn-primary">Edit Detail Jabatan</a>
         </div>
     </div>
       
