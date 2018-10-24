@@ -14,6 +14,7 @@
 
     <div class="content">
         <div class="row">
+          <?php foreach ($GetJobSpes as $g) { ?>
 
             <!-- Identitas Pegawai -->
             <div class="col-md-12">
@@ -23,7 +24,8 @@
                   	</div>
                   	<div class="card-body">
                     	<!-- <div class="table-responsive"> -->
-                        <p>Fungsi Utama Jabatan saya Adalah xxxxxxx...........</p>
+                        <p><?php echo $g->fungsiutama; ?>
+                        </p>
                         <div style="margin-bottom: 5px; margin-right: 25px" align="right">
                             <a href="<?php echo base_url()?>user/edit_fungsijabatan" class="btn btn-round btn-primary">Edit Fungsi Utama Jabatan</a>
                         </div>
@@ -38,11 +40,11 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header ">
-                        <h4 class="card-title">Nama SOP</h4>
+                        <h4 class="card-title">Tanggung Jawab</h4>
                     </div>
                     <div class="card-body ">
                         <!-- <div class="table-full-width table-responsive"> -->
-                            <p>Nama SOP saya Adalah......................</p>
+                            <p><?php echo $g->tanggungjawab; ?></p>
                         <!-- </div> -->
                         <div style="margin-bottom: 5px; margin-right: 25px" align="right">
                             <a href="<?php echo base_url()?>user/edit_namasop" class="btn btn-round btn-primary">Edit Nama SOP</a>
@@ -51,17 +53,35 @@
                 </div>
                 <div class="card">
                     <div class="card-header ">
-                        <h4 class="card-title">Tujuan SOP</h4>
+                        <h4 class="card-title">Sepsifikasi Jabatan</h4>
                     </div>
                     <div class="card-body ">
                         <!-- <div class="table-full-width table-responsive"> -->
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td class="text-left">Tujuan SOP 1</td>
+                                        <td class="text-left">Pendidikan: <?php echo $g->spespendidikan; ?></td>
+
                                     </tr>
                                     <tr>
-                                        <td class="text-left">Tujuan SOP 2</td>
+                                        <td class="text-left">Usia: <?php echo $g->spesusia; ?></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">Jenis Kelamin: <?php echo $g->speskelamin; ?></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">Pengalaman Kerja: <?php echo $g->spespengalaman; ?></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">Pelatihan: <?php echo $g->spespelatihan; ?></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">Sertifikasi: <?php echo $g->spessertifikasi; ?></td>
+
                                     </tr>
                                 </tbody>
                             </table>
@@ -78,14 +98,14 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header ">
-                        <h4 class="card-title">Uraian Singkat Prosedur</h4>
+                        <h4 class="card-title">Target Pekerjaan</h4>
                     </div>
                     <div class="card-body ">
                         <!-- <div class="table-full-width table-responsive"> -->
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td class="text-left">Uraian Singkat Prosedur ...............</td>
+                                        <td class="text-left"><?php echo $g->targetpekerjaan; ?></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -97,19 +117,14 @@
                 </div>
                 <div class="card">
                     <div class="card-header ">
-                        <h4 class="card-title">Lampiran SOP</h4>
+                        <h4 class="card-title">Wewenang</h4>
                     </div>
                     <div class="card-body ">
                         <!-- <div class="table-full-width table-responsive"> -->
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Lampiran</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Lampiran 1</td>
+                                        <th><?php echo $g->wewenang; ?></th>
                                     </tr>
                                 </tbody>
                             </table>   
@@ -121,7 +136,7 @@
                 </div>                
             </div>
             <!-- End Job Description -->
-        
+            <?php } ?>
         </div>
     </div>
       

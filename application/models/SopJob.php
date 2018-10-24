@@ -27,6 +27,12 @@ class SopJob extends CI_Model {
     return $data -> result_array();
   }
 
+  public function GetJobSpes($jabatan){
+    $this->db->where('jabatan', $jabatan);
+    return $this->db->get('identitasjabatan')->result();
+    
+  }
+
 	public function GetSop($where=""){
     $data = $this->db->query('SELECT * FROM sop '.$where);
     return $data -> result_array();

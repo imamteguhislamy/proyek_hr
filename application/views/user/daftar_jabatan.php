@@ -22,12 +22,17 @@
 		                      	<th>Kode Bagian</th>
 		                    </thead>
 		                    <tbody>
+		                      <?php foreach ($data as $m) { ?>
+
 		                      	<tr>
-		                        	<td><a href="<?php echo base_url()?>user/detail_jabatan">Nama Jabatan 1</a></td>
-		                        	<td>Bagian 1</td>
-		                        	<td>Unit 1</td>
-		                        	<td>Kode Bagian 1</td>
+		                        	<!-- <td><a href="<?php echo base_url()?>user/detail_jabatan"><?php echo $m['jabatan']?></a></td> -->
+		                        	
+ 									<td><a href="<?php echo base_url()?>user/detail_jabatan/<?php echo $m['jabatan']?>"<b><?php echo $m['jabatan'];?></b></a></td>
+		                        	<td><?php echo $m['bagian']?></td>
+		                        	<td><?php echo $m['unit']?></td>
+		                        	<td><?php echo $m['kodebagian']?></td>
 		                      	</tr>
+		                       <?php } ?>
 		                    </tbody>
 	                 	</table>
                 	<!-- </div> -->
