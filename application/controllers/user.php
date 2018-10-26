@@ -71,6 +71,30 @@ class user extends CI_Controller {
 		$this->load->view('user/footer');
 	}
 
+	public function daftar_sop()
+	{
+		$this->load->view('user/sidebar');
+		$this->load->view('user/header');
+		$this->load->view('user/daftar_sop');
+		$this->load->view('user/footer');
+	}
+
+	public function detail_sop()
+	{
+		$this->load->view('user/sidebar');
+		$this->load->view('user/header');
+		$this->load->view('user/detail_sop');
+		$this->load->view('user/footer');
+	}
+
+	public function edit_sop()
+	{
+		$this->load->view('user/sidebar');
+		$this->load->view('user/header');
+		$this->load->view('user/edit_sop');
+		$this->load->view('user/footer');
+	}
+
 	// public function add_menu()
  //  {
  //    $data = $this-> MyModel -> GetMenu();

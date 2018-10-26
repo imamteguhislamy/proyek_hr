@@ -29,6 +29,11 @@
                             <i class="now-ui-icons design_app"></i><p>Daftar Jabatan</p>
                         </a>
                     </li>
+                    <li>
+                        <a href="<?php echo base_url()?>user/daftar_sop">
+                            <i class="now-ui-icons design_app"></i><p>Daftar SOP</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
