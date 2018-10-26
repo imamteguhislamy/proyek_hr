@@ -128,5 +128,12 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12" align="center">
+                <div style="margin-bottom: 5px; margin-right: 25px">
+                    <a class="btn btn-round btn-danger" data-toggle="modal" data-target="#myModalSOP" style="color: white">Hapus SOP</a>  <!-- Atur modal di footer bagian "Mini Modal" -->
+                </div>
+            </div>
+        </div>
     </div>
       

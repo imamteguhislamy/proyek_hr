@@ -24,6 +24,13 @@
 		                     	</tr>
 		                    </tbody>
 	                 	</table>
+	                 	<div class="row">
+				            <div class="col-md-12" align="center">
+				                <div style="margin-bottom: 5px; margin-right: 25px">
+				                    <a href="<?php echo base_url()?>user/tambah_sop" class="btn btn-round btn-primary">Tambah SOP Baru</a>
+				                </div>
+				            </div>
+				        </div>
                 	<!-- </div> -->
               	</div>
             </div>

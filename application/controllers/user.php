@@ -39,35 +39,29 @@ class user extends CI_Controller {
 		$this->load->view('user/footer');
 	}
 
-	public function edit_tujuansop()
+	public function tambah_jabatan()
 	{
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
-		$this->load->view('user/edit_tujuansop');
+		$this->load->view('user/tambah_jabatan');
 		$this->load->view('user/footer');
 	}
 
-	public function edit_uraiansop()
+	public function edit_jabatan()
 	{
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
-		$this->load->view('user/edit_uraiansop');
+		$this->load->view('user/edit_jabatan');
 		$this->load->view('user/footer');
 	}
 
-	public function edit_namasop()
+	public function hapus_jabatan()
 	{
-		$this->load->view('user/sidebar');
-		$this->load->view('user/header');
-		$this->load->view('user/edit_namasop');
-		$this->load->view('user/footer');
-	}
+		echo "Jabatan Dihapus";
 
-	public function edit_fungsijabatan()
-	{
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
-		$this->load->view('user/edit_fungsijabatan');
+		$this->load->view('user/edit_jabatan');
 		$this->load->view('user/footer');
 	}
 
@@ -92,6 +86,24 @@ class user extends CI_Controller {
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
 		$this->load->view('user/edit_sop');
+		$this->load->view('user/footer');
+	}
+
+	public function tambah_sop()
+	{
+		$this->load->view('user/sidebar');
+		$this->load->view('user/header');
+		$this->load->view('user/tambah_sop');
+		$this->load->view('user/footer');
+	}
+
+	public function hapus_sop()
+	{
+		echo "SOP Dihapus";
+
+		$this->load->view('user/sidebar');
+		$this->load->view('user/header');
+		$this->load->view('user/daftar_sop');
 		$this->load->view('user/footer');
 	}
 
