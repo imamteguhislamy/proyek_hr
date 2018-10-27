@@ -7,7 +7,7 @@
         }
     </style>
 </head>
-
+    <?php foreach ($GetSobSpes as $g) { ?>
     <div class="panel-header panel-header-xs">
         <h1 align="center" style="color: white">Detail SOP</h1>
     </div>
@@ -22,7 +22,7 @@
                   	</div>
                   	<div class="card-body">
                     	<!-- <div class="table-responsive"> -->
-                        <p>Nama SOP ini adalah ......</p>
+                        <p><?php echo $g->namasop; ?></p>
                     	<!-- </div> -->
                   	</div>
                 </div>
@@ -40,10 +40,19 @@
                         <!-- <div class="table-responsive"> -->
                         <table class="table">
                             <tr>
-                                <td>Tujuan SOP 1</td>
+                                <td><?php echo $g->tujuansop1; ?></td>
                             </tr>
                             <tr>
-                                <td>Tujuan SOP 2</td>
+                                <td><?php echo $g->tujuansop2; ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php echo $g->tujuansop3; ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php echo $g->tujuansop4; ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php echo $g->tujuansop5; ?></td>
                             </tr>
                         </table>
                         <!-- </div> -->
@@ -62,10 +71,19 @@
                         <!-- <div class="table-responsive"> -->
                         <table class="table">
                             <tr>
-                                <td>Deskripsi 1</td>
+                                <td><?php echo $g->uraiansop1; ?></td>
                             </tr>
                             <tr>
-                                <td>Deskripsi 2</td>
+                                <td><?php echo $g->uraiansop2; ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php echo $g->uraiansop3; ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php echo $g->uraiansop4; ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php echo $g->uraiansop5; ?></td>
                             </tr>
                         </table>
                         <!-- </div> -->
@@ -75,15 +93,13 @@
             <!-- End Deskripsi Singkat Prosedur -->
         </div>
 
-        <div class="row">
-            <!-- Tujuan SOP -->
+       <!--  <div class="row">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title"> Lampiran SOP</h4>
                     </div>
                     <div class="card-body">
-                        <!-- <div class="table-responsive"> -->
                         <table class="table">
                             <thead class=" text-primary">
                                 <th>Nama Lampiran</th>
@@ -94,46 +110,45 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- </div> -->
                     </div>
                 </div>
             </div>
-            <!-- End Tujuan SOP -->
             
-            <!-- Deskripsi Singkat Prosedur -->
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title"> Upload Lampiran SOP</h4>
                     </div>
                     <div class="card-body">
-                        <!-- <div class="table-responsive"> -->
                         <div>
                             <input type="file" value="Nama SOP"/>
                         </div>
                         <div align="right">
                             <button type="submit" class="btn btn-round btn-primary">Upload</button>
                         </div>
-                        <!-- </div> -->
                     </div>
                 </div>
-            </div>
-            <!-- End Deskripsi Singkat Prosedur -->
-        </div>
+            </div> -->
 
+          <?php } ?>
+        
         <div class="row">
             <div class="col-md-12" align="center">
                 <div style="margin-bottom: 5px; margin-right: 25px">
-                    <a href="<?php echo base_url()?>user/edit_sop" class="btn btn-round btn-primary">Edit Detail SOP</a>
+                    <a href="<?php echo base_url()?>user/edit_sop/<?php echo $g->namasop?>" class="btn btn-round btn-primary">Edit Detail SOP</a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12" align="center">
                 <div style="margin-bottom: 5px; margin-right: 25px">
-                    <a class="btn btn-round btn-danger" data-toggle="modal" data-target="#myModalSOP" style="color: white">Hapus SOP</a>  <!-- Atur modal di footer bagian "Mini Modal" -->
+                    <!-- <a class="btn btn-round btn-danger" data-toggle="modal" data-target="#myModalSOP" style="color: white">Hapus SOP</a> -->  <!-- Atur modal di footer bagian "Mini Modal" -->
+                    <a href="<?php echo base_url().'admin/sop_del/'.$g->namasop?>">
+                        <button type="button" class="btn btn-round btn-danger" ata-toggle="modal" data-target="#myModalJabatan" style="color: white">Hapus Jabatan</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-      
+    </div>
+

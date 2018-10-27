@@ -19,9 +19,12 @@
 		                      	<th>Nama SOP</th>
 		                    </thead>
 		                    <tbody>
+		                    	<?php foreach ($data as $m) { ?>
 		                     	<tr>
-		                     		<td><a href="<?php echo base_url()?>user/detail_sop">SOP 1</a></td>
+		                     		<td><a href="<?php echo base_url()?>user/detail_sop/<?php echo $m['namasop']?>"<b>SOP <?php echo $m['idsop'];?></b></a></td>
+		                     		<td><a href="<?php echo base_url()?>user/detail_sop/<?php echo $m['namasop']?>"<b><?php echo $m['namasop'];?></b></a></td>
 		                     	</tr>
+		                     <?php } ?>
 		                    </tbody>
 	                 	</table>
 	                 	<div class="row">

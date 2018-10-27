@@ -16,6 +16,7 @@
         <div class="row">
             <!-- Nama SOP -->
             <div class="col-md-12">
+                <?php echo form_open_multipart('admin/sob_add');?>
                 <div class="card">
                   	<div class="card-header">
                     	<h4 class="card-title"> Nama SOP</h4>
@@ -23,7 +24,7 @@
                   	<div class="card-body">
                     	<!-- <div class="table-responsive"> -->
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="nama-sop" value="Nama SOP"/>
+                            <input type="text" class="form-control" placeholder="nama-sop" required="" name="namasop"/>
                         </div>
                     	<!-- </div> -->
                   	</div>
@@ -41,11 +42,11 @@
                     <div class="card-body">
                         <!-- <div class="table-responsive"> -->
                         <div class="form-group" align="left">
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" value="Tujuan SOP 1"></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" value="Tujuan SOP 2"></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" value="Tujuan SOP 3"></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" value="Tujuan SOP 4"></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" value="Tujuan SOP 5"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop1"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop2"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop3"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop4"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop5"></textarea>
                         </div>
                         <!-- </div> -->
                     </div>
@@ -62,11 +63,11 @@
                     <div class="card-body">
                         <!-- <div class="table-responsive"> -->
                         <div class="form-group">
-                            <textarea rows="4" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" value="Deskripsi 1"></textarea>
-                            <textarea rows="4" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" value="Deskripsi 2"></textarea>
-                            <textarea rows="4" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" value="Deskripsi 3"></textarea>
-                            <textarea rows="4" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" value="Deskripsi 4"></textarea>
-                            <textarea rows="4" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" value="Deskripsi 5"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop1"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop2"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop3"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop4"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop5"></textarea>
                         </div>
                         <!-- </div> -->
                     </div>
@@ -77,7 +78,7 @@
         <div class="row">
             <div class="col-md-12" align="center">
                 <div style="margin-bottom: 5px; margin-right: 25px">
-                    <a href="<?php echo base_url()?>user/detail_sop" class="btn btn-round btn-primary">Tambah SOP</a>
+                   <input type="submit" class="btn btn-primary" name="Tambah" value="Tambah">
                 </div>
             </div>
         </div>

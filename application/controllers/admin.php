@@ -48,82 +48,197 @@ class admin extends CI_Controller {
     redirect('admin');
   }
 
+  
+  public function job_add(){
+    // $idjab = $_POST['idjab'];
+    $jabatan = $_POST['jabatan'];
+    $bagian = $_POST['bagian'];
+    $unit = $_POST['unit'];
+    $kodebagian = $_POST['kodebagian'];
+    $fungsiutama = $_POST['fungsiutama'];
+    $tanggungjawab = $_POST['tanggungjawab'];
+    $spespendidikan = $_POST['spespendidikan'];
+    $spesusia = $_POST['spesusia'];
+    $speskelamin = $_POST['speskelamin'];
+    $spespengalaman = $_POST['spespengalaman'];
+    $spespelatihan = $_POST['spespelatihan'];
+    $spessertifikasi = $_POST['spessertifikasi'];
+    $targetpekerjaan = $_POST['targetpekerjaan'];
+    $wewenang = $_POST['wewenang'];
 
-  public function edit_menu($id_menu)
-  {
-    $menu = $this-> MyModel -> GetMenu("where id_menu = '$id_menu'");
-    $data = array(
-      "id_menu" => $menu[0]['id_menu'],
-      "nama_menu" => $menu[0]['nama_menu'],
-      "gambar" => $menu[0]['gambar'],
-      "deskripsi" => $menu[0]['deskripsi'],
-      "harga" => $menu[0]['harga']
-    );
-    $this -> load -> view('admin_editmenu', $data);
-  }
-
-  public function form_edit()
-  {
-    $id_menu = $_POST['id_menu'];
-    $nama_menu = $_POST['nama_menu'];
-    $deskripsi = $_POST['deskripsi'];
-    $harga = $_POST['harga'];
-
-    if ($_FILES['gambar']['size'] == 0 && $_FILES['gambar']['error'] == 0)
-    {
-      $gambar = null;
-    }
-    else {
-      $target_dir = "gambar/";
-      $target_file = $target_dir . basename($_FILES["gambar"]["name"]);
-      $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-      if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file)) {
-          echo "The file ". basename( $_FILES["gambar"]["name"]). " has been uploaded.";
-      }  else {
-          echo "Sorry, there was an error uploading your file.";
+    $addjob = array(
+      // 'idjab' => $idjab,
+      'jabatan' => $jabatan,
+      'bagian' => $bagian,
+      'unit' => $unit,
+      'kodebagian' => $kodebagian,
+      'fungsiutama' => $fungsiutama,
+      'tanggungjawab' => $tanggungjawab,
+      'spespendidikan' => $spespendidikan,
+      'spesusia' => $spesusia,
+      'speskelamin' => $speskelamin,
+      'spespengalaman' => $spespengalaman,
+      'spespelatihan' => $spespelatihan,
+      'spessertifikasi' => $spessertifikasi,
+      'targetpekerjaan' => $targetpekerjaan,
+      'wewenang' => $wewenang
+      );
+      $res = $this->SopJob->InsertData('identitasjabatan',$addjob);
+      if ($res>=1) {
+        redirect('user/daftar_jabatan');
+      } 
+      else {
+        echo "<h2>Data gagal untuk ditambahkan</h2>";
       }
-      $gambar = basename( $_FILES["gambar"]["name"]);
-    }
-
-    $data_kumpul = null;
-
-    if($gambar == null) {
-      $data_kumpul = array(
-        'id_menu' => $id_menu,
-        'nama_menu' => $nama_menu,
-        'deskripsi' => $deskripsi,
-        'harga' => $harga,
-        'timestamp' => time()
-        );
-    } else {
-      $data_kumpul = array(
-        'id_menu' => $id_menu,
-        'nama_menu' => $nama_menu,
-        'gambar' => $gambar,
-        'deskripsi' => $deskripsi,
-        'harga' => $harga,
-        'timestamp' => time()
-        );
-    }
-    $where = array('id_menu' => $id_menu);
-    $res = $this->MyModel->updateData('menu', $data_kumpul, $where);
-    if ($res>=1) {
-      redirect('Ctrl_admin/menu');
-    } else {
-      echo "<h2>Data gagal untuk ditambahkan</h2>";
-    }
+    
+   
   }
 
-   public function delete_menu($id_menu)
+  public function sob_add(){
+    // $idjab = $_POST['idjab'];
+    $namasop = $_POST['namasop'];
+    $tujuansop1 = $_POST['tujuansop1'];
+    $tujuansop2 = $_POST['tujuansop2'];
+    $tujuansop3 = $_POST['tujuansop3'];
+    $tujuansop4 = $_POST['tujuansop4'];
+    $tujuansop5 = $_POST['tujuansop5'];
+    $uraiansop1 = $_POST['uraiansop1'];
+    $uraiansop2 = $_POST['uraiansop2'];
+    $uraiansop3 = $_POST['uraiansop3'];
+    $uraiansop4 = $_POST['uraiansop4'];
+    $uraiansop5 = $_POST['uraiansop5'];
+
+    $addjob = array(
+      // 'idjab' => $idjab,
+      'namasop' => $namasop,
+      'tujuansop1' => $tujuansop1,
+      'tujuansop2' => $tujuansop2,
+      'tujuansop3' => $tujuansop3,
+      'tujuansop4' => $tujuansop4,
+      'tujuansop5' => $tujuansop5,
+      'uraiansop1' => $uraiansop1,
+      'uraiansop2' => $uraiansop2,
+      'uraiansop3' => $uraiansop3,
+      'uraiansop4' => $uraiansop4,
+      'uraiansop5' => $uraiansop5
+      );
+      $res = $this->SopJob->InsertData('sop',$addjob);
+      if ($res>=1) {
+        redirect('user/daftar_sop');
+      } 
+      else {
+        echo "<h2>Data gagal untuk ditambahkan</h2>";
+      }
+    
+   
+  }
+
+
+  public function job_edit()
   {
-    $where = array('id_menu' => $id_menu);
-    $res = $this->MyModel->deleteData('menu', $where);
+    $jabatan = $_POST['jabatan'];
+    $bagian = $_POST['bagian'];
+    $unit = $_POST['unit'];
+    $kodebagian = $_POST['kodebagian'];
+    $fungsiutama = $_POST['fungsiutama'];
+    $tanggungjawab = $_POST['tanggungjawab'];
+    $spespendidikan = $_POST['spespendidikan'];
+    $spesusia = $_POST['spesusia'];
+    $speskelamin = $_POST['speskelamin'];
+    $spespengalaman = $_POST['spespengalaman'];
+    $spespelatihan = $_POST['spespelatihan'];
+    $spessertifikasi = $_POST['spessertifikasi'];
+    $targetpekerjaan = $_POST['targetpekerjaan'];
+    $wewenang = $_POST['wewenang'];
+
+    $editjob = array(
+      // 'idjab' => $idjab,
+      'jabatan' => $jabatan,
+      'bagian' => $bagian,
+      'unit' => $unit,
+      'kodebagian' => $kodebagian,
+      'fungsiutama' => $fungsiutama,
+      'tanggungjawab' => $tanggungjawab,
+      'spespendidikan' => $spespendidikan,
+      'spesusia' => $spesusia,
+      'speskelamin' => $speskelamin,
+      'spespengalaman' => $spespengalaman,
+      'spespelatihan' => $spespelatihan,
+      'spessertifikasi' => $spessertifikasi,
+      'targetpekerjaan' => $targetpekerjaan,
+      'wewenang' => $wewenang
+      );
+      $where = array('jabatan' => $jabatan);
+      $res = $this->SopJob->updateData('identitasjabatan',$editjob, $where);
+      if ($res>=1) {
+        redirect('user/daftar_jabatan');
+      } 
+      else {
+        echo "<h2>Data gagal untuk diubah</h2>";
+      }
+  }
+
+  public function sop_edit()
+  {
+    $namasop = $_POST['namasop'];
+    $tujuansop1 = $_POST['tujuansop1'];
+    $tujuansop2 = $_POST['tujuansop2'];
+    $tujuansop3 = $_POST['tujuansop3'];
+    $tujuansop4 = $_POST['tujuansop4'];
+    $tujuansop5 = $_POST['tujuansop5'];
+    $uraiansop1 = $_POST['uraiansop1'];
+    $uraiansop2 = $_POST['uraiansop2'];
+    $uraiansop3 = $_POST['uraiansop3'];
+    $uraiansop4 = $_POST['uraiansop4'];
+    $uraiansop5 = $_POST['uraiansop5'];
+
+    $editsob = array(
+      // 'idjab' => $idjab,
+      'namasop' => $namasop,
+      'tujuansop1' => $tujuansop1,
+      'tujuansop2' => $tujuansop2,
+      'tujuansop3' => $tujuansop3,
+      'tujuansop4' => $tujuansop4,
+      'tujuansop5' => $tujuansop5,
+      'uraiansop1' => $uraiansop1,
+      'uraiansop2' => $uraiansop2,
+      'uraiansop3' => $uraiansop3,
+      'uraiansop4' => $uraiansop4,
+      'uraiansop5' => $uraiansop5
+      );
+      $where = array('namasop' => $namasop);
+      $res = $this->SopJob->updateData('sop',$editsob, $where);
+      if ($res>=1) {
+        redirect('user/daftar_sop');
+      } 
+      else {
+        echo "<h2>Data gagal untuk diubah</h2>";
+      }
+  }
+
+   public function job_del($jabatan)
+  {
+    $where = array('jabatan' => $jabatan);
+    $res = $this->SopJob->deleteData('identitasjabatan', $where);
     if ($res>=1) {
-      redirect('Ctrl_admin/menu');
+      redirect('user/daftar_jabatan');
     } else {
       echo "<h2>Data gagal untuk dihapus</h2>";
     }
   }
+
+   public function sop_del($namasop)
+  {
+    $where = array('namasop' => $namasop);
+    $res = $this->SopJob->deleteData('sop', $where);
+    if ($res>=1) {
+      redirect('user/daftar_sop');
+    } else {
+      echo "<h2>Data gagal untuk dihapus</h2>";
+    }
+  }
+
+
 
 
 }

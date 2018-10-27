@@ -98,7 +98,7 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <th style="width: 550px">Target 1</th>
+                                        <!-- <th style="width: 550px">Target 1</th> -->
                                         <td><?php echo $g->targetpekerjaan; ?></td>
                                     </tr>
                                 </tbody>
@@ -124,21 +124,26 @@
                 </div>                
             </div>
             <!-- End Job Description -->
-            <?php } ?>
+           
         </div>
         <div class="row">
             <div class="col-md-12" align="center">
                 <div style="margin-bottom: 5px; margin-right: 25px">
-                    <a href="<?php echo base_url()?>user/edit_jabatan" class="btn btn-round btn-primary">Edit Detail Jabatan</a>
+                    <a href="<?php echo base_url()?>user/edit_jabatan/<?php echo $g->jabatan?>" class="btn btn-round btn-primary">Edit Detail Jabatan</a>
                 </div>
+                <!-- <td><a href="<?php echo base_url()?>user/detail_jabatan/<?php echo $m['jabatan']?>"<b><?php echo $m['jabatan'];?></b></a></td> -->
             </div>
         </div>
         <div class="row">
             <div class="col-md-12" align="center">
                 <div style="margin-bottom: 5px; margin-right: 25px">
-                    <a class="btn btn-round btn-danger" data-toggle="modal" data-target="#myModalJabatan" style="color: white">Hapus Jabatan</a>  <!-- Atur modal di footer bagian "Mini Modal" -->
+                   <!--  <a href="<?php echo base_url()?>admin/job_del/<?php echo $g->jabatan?>"class="btn btn-round btn-danger" data-toggle="modal" data-target="#myModalJabatan" style="color: white">Hapus Jabatan</a>  -->
+
+                    <a href="<?php echo base_url().'admin/job_del/'.$g->jabatan?>">
+                        <button type="button" class="btn btn-round btn-danger" ata-toggle="modal" data-target="#myModalJabatan" style="color: white">Hapus Jabatan</button>
+                    </a>
                 </div>
             </div>
         </div>
+         <?php } ?>
     </div>
-      
