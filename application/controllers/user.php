@@ -50,7 +50,7 @@ class user extends CI_Controller {
 	public function edit_jabatan($jabatan)
 	{
 		$data["jabatan"]=$jabatan;
-		$data['GetJobSpess'] = $this-> SopJob ->GetJobSpes($jabatan);
+		$data['GetJobSpes'] = $this-> SopJob ->GetJobSpes($jabatan);
 
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
@@ -80,7 +80,7 @@ class user extends CI_Controller {
 	public function detail_sop($namasop)
 	{
 		$data["namasop"]=$namasop;
-		$data['GetSobSpes'] = $this-> SopJob ->GetSobSpes($namasop);
+		$data['GetSopSpes'] = $this-> SopJob ->GetSopSpes($namasop);
 
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
@@ -91,7 +91,7 @@ class user extends CI_Controller {
 	public function edit_sop($namasop)
 	{
 		$data["namasop"]=$namasop;
-		$data['GetSobSpes'] = $this-> SopJob ->GetSobSpes($namasop);
+		$data['GetSopSpes'] = $this-> SopJob ->GetSopSpes($namasop);
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
 		$this->load->view('user/edit_sop', $data);

@@ -17,7 +17,7 @@
             <!-- Nama SOP -->
             <div class="col-md-12">
                 <?php echo form_open_multipart('admin/sob_adit');?>
-                <?php foreach ($GetSobSpes as $g) { ?>                
+                <?php foreach ($GetSopSpes as $g) { ?>                
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title"> Nama SOP</h4>

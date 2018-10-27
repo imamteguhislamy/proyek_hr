@@ -7,7 +7,7 @@
         }
     </style>
 </head>
-    <?php foreach ($GetSobSpes as $g) { ?>
+    <?php foreach ($GetSopSpes as $g) { ?>
     <div class="panel-header panel-header-xs">
         <h1 align="center" style="color: white">Detail SOP</h1>
     </div>
