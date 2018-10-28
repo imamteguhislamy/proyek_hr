@@ -43,11 +43,11 @@
                     <div class="card-body">
                         <!-- <div class="table-responsive"> -->
                         <div class="form-group" align="left">
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop1"><?php echo $g->tujuansop1; ?></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop2"><?php echo $g->tujuansop2; ?></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop3"><?php echo $g->tujuansop3; ?></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop4"><?php echo $g->tujuansop4; ?></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop5"><?php echo $g->tujuansop5; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop1"><?php echo $g->tujuansop1; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop2"><?php echo $g->tujuansop2; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop3"><?php echo $g->tujuansop3; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop4"><?php echo $g->tujuansop4; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop5"><?php echo $g->tujuansop5; ?></textarea>
                         </div>
                         <!-- </div> -->
                     </div>
@@ -64,11 +64,11 @@
                     <div class="card-body">
                         <!-- <div class="table-responsive"> -->
                         <div class="form-group">
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop1"><?php echo $g->uraiansop1; ?></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop2"><?php echo $g->uraiansop2; ?></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop3"><?php echo $g->uraiansop3; ?></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop4"><?php echo $g->uraiansop4; ?></textarea>
-                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop5"><?php echo $g->uraiansop5; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop1"><?php echo $g->uraiansop1; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop2"><?php echo $g->uraiansop2; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop3"><?php echo $g->uraiansop3; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop4"><?php echo $g->uraiansop4; ?></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop5"><?php echo $g->uraiansop5; ?></textarea>
                         </div>
                         <!-- </div> -->
                         <?php } ?>

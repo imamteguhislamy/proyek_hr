@@ -16,7 +16,7 @@
                 <span class="navbar-toggler-bar navbar-kebab"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                <form>
+<!--                 <form>
                     <div class="input-group no-border">
                         <input type="text" value="" class="form-control" placeholder="Search...">
                             <div class="input-group-append">
@@ -25,8 +25,8 @@
                                 </div>
                             </div>
                     </div>
-                </form>
-                <ul class="navbar-nav">
+                </form> -->
+                <!-- <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#pablo">
                             <i class="now-ui-icons media-2_sound-wave"></i>
@@ -50,7 +50,7 @@
                             <p><span class="d-lg-none d-md-block">Account</span></p>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </nav>
