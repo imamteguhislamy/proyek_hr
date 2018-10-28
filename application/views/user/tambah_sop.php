@@ -42,11 +42,19 @@
                     <div class="card-body">
                         <!-- <div class="table-responsive"> -->
                         <div class="form-group" align="left">
+<<<<<<< HEAD
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP"  name="tujuansop1"></textarea>
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP"  name="tujuansop2"></textarea>
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP"  name="tujuansop3"></textarea>
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP"  name="tujuansop4"></textarea>
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP"  name="tujuansop5"></textarea>
+=======
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" required="" name="tujuansop1"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop2"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop3"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop4"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Tujuan SOP" name="tujuansop5"></textarea>
+>>>>>>> 9c5b0d95d0b815a90b04259a64d56e73adff5a54
                         </div>
                         <!-- </div> -->
                     </div>
@@ -63,11 +71,19 @@
                     <div class="card-body">
                         <!-- <div class="table-responsive"> -->
                         <div class="form-group">
+<<<<<<< HEAD
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat"  name="uraiansop1"></textarea>
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat"  name="uraiansop2"></textarea>
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat"  name="uraiansop3"></textarea>
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat"  name="uraiansop4"></textarea>
                             <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat"  name="uraiansop5"></textarea>
+=======
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" required="" name="uraiansop1"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop2"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop3"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop4"></textarea>
+                            <textarea rows="3" cols="104" type="text" style="resize: none; border-color: #E3E3E3" placeholder="Deskripsi Singkat" name="uraiansop5"></textarea>
+>>>>>>> 9c5b0d95d0b815a90b04259a64d56e73adff5a54
                         </div>
                         <!-- </div> -->
                     </div>
