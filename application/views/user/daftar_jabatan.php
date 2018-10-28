@@ -27,7 +27,7 @@
 		                      	<tr>
 		                        	<!-- <td><a href="<?php echo base_url()?>user/detail_jabatan"><?php echo $m['jabatan']?></a></td> -->
 		                        	
- 									<td><a href="<?php echo base_url()?>user/detail_jabatan/<?php echo $m['jabatan']?>"<b><?php echo $m['jabatan'];?></b></a></td>
+ 									<td><a href="<?php echo base_url()?>user/detail_jabatan/<?php echo $m['idjab']?>"<b><?php echo $m['jabatan'];?></b></a></td>
 		                        	<td><?php echo $m['bagian']?></td>
 		                        	<td><?php echo $m['unit']?></td>
 		                        	<td><?php echo $m['kodebagian']?></td>

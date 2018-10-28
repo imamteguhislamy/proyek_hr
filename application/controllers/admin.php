@@ -136,6 +136,7 @@ class admin extends CI_Controller {
 
   public function job_edit()
   {
+    $idjab = $_POST['idjab'];
     $jabatan = $_POST['jabatan'];
     $bagian = $_POST['bagian'];
     $unit = $_POST['unit'];
@@ -152,7 +153,7 @@ class admin extends CI_Controller {
     $wewenang = $_POST['wewenang'];
 
     $editjob = array(
-      // 'idjab' => $idjab,
+      'idjab' => $idjab,
       'jabatan' => $jabatan,
       'bagian' => $bagian,
       'unit' => $unit,
@@ -168,7 +169,7 @@ class admin extends CI_Controller {
       'targetpekerjaan' => $targetpekerjaan,
       'wewenang' => $wewenang
       );
-      $where = array('jabatan' => $jabatan);
+      $where = array('idjab' => $idjab);
       $res = $this->SopJob->updateData('identitasjabatan',$editjob, $where);
       if ($res>=1) {
         redirect('user/daftar_jabatan');
@@ -180,6 +181,7 @@ class admin extends CI_Controller {
 
   public function sop_edit()
   {
+    $idsop = $_POST['idsop'];
     $namasop = $_POST['namasop'];
     $tujuansop1 = $_POST['tujuansop1'];
     $tujuansop2 = $_POST['tujuansop2'];
@@ -192,8 +194,8 @@ class admin extends CI_Controller {
     $uraiansop4 = $_POST['uraiansop4'];
     $uraiansop5 = $_POST['uraiansop5'];
 
-    $editsob = array(
-      // 'idjab' => $idjab,
+    $editsop = array(
+      'idsop' => $idsop,
       'namasop' => $namasop,
       'tujuansop1' => $tujuansop1,
       'tujuansop2' => $tujuansop2,
@@ -206,8 +208,8 @@ class admin extends CI_Controller {
       'uraiansop4' => $uraiansop4,
       'uraiansop5' => $uraiansop5
       );
-      $where = array('namasop' => $namasop);
-      $res = $this->SopJob->updateData('sop',$editsob, $where);
+      $where = array('idsop' => $idsop);
+      $res = $this->SopJob->updateData('sop',$editsop, $where);
       if ($res>=1) {
         redirect('user/daftar_sop');
       } 
@@ -216,9 +218,9 @@ class admin extends CI_Controller {
       }
   }
 
-   public function job_del($jabatan)
+   public function job_del($idjab)
   {
-    $where = array('jabatan' => $jabatan);
+    $where = array('idjab' => $idjab);
     $res = $this->SopJob->deleteData('identitasjabatan', $where);
     if ($res>=1) {
       redirect('user/daftar_jabatan');
@@ -227,9 +229,9 @@ class admin extends CI_Controller {
     }
   }
 
-   public function sop_del($namasop)
+   public function sop_del($idsop)
   {
-    $where = array('namasop' => $namasop);
+    $where = array('idsop' => $idsop);
     $res = $this->SopJob->deleteData('sop', $where);
     if ($res>=1) {
       redirect('user/daftar_sop');

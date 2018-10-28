@@ -93,7 +93,7 @@
             <!-- End Deskripsi Singkat Prosedur -->
         </div>
 
-       <!--  <div class="row">
+        <div class="row">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
@@ -128,14 +128,15 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+            </div>
 
           <?php } ?>
         
         <div class="row">
             <div class="col-md-12" align="center">
                 <div style="margin-bottom: 5px; margin-right: 25px">
-                    <a href="<?php echo base_url()?>user/edit_sop/<?php echo $g->namasop?>" class="btn btn-round btn-primary">Edit Detail SOP</a>
+                    <a href="<?php echo base_url()?>user/edit_sop/<?php echo $g->idsop?>" class="btn btn-round btn-primary">Edit Detail SOP</a>
                 </div>
             </div>
         </div>
@@ -143,12 +144,12 @@
             <div class="col-md-12" align="center">
                 <div style="margin-bottom: 5px; margin-right: 25px">
                     <!-- <a class="btn btn-round btn-danger" data-toggle="modal" data-target="#myModalSOP" style="color: white">Hapus SOP</a> -->  <!-- Atur modal di footer bagian "Mini Modal" -->
-                    <a href="<?php echo base_url().'admin/sop_del/'.$g->namasop?>">
+                    <a href="<?php echo base_url().'admin/sop_del/'.$g->idsop?>">
                         <button type="button" class="btn btn-round btn-danger" ata-toggle="modal" data-target="#myModalJabatan" style="color: white">Hapus Jabatan</button>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    <!-- </div> -->
 

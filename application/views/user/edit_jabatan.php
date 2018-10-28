@@ -20,6 +20,15 @@
                 <?php foreach ($GetJobSpes as $g) { ?>
                 <div class="card">
                     <div class="card-header">
+                        <h4 class="card-title"> ID Jabatan</h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- <div class="table-responsive"> -->
+                        <input type="text" class="form-control" required="" value="<?php echo $g->idjab; ?>" name="idjab" readonly>
+                        <!-- </div> -->
+                    </div>
+                    <br>
+                    <div class="card-header">
                         <h4 class="card-title"> Nama Jabatan</h4>
                     </div>
                     <div class="card-body">

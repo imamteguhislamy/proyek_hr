@@ -129,7 +129,7 @@
         <div class="row">
             <div class="col-md-12" align="center">
                 <div style="margin-bottom: 5px; margin-right: 25px">
-                    <a href="<?php echo base_url()?>user/edit_jabatan/<?php echo $g->jabatan?>" class="btn btn-round btn-primary">Edit Detail Jabatan</a>
+                    <a href="<?php echo base_url()?>user/edit_jabatan/<?php echo $g->idjab?>" class="btn btn-round btn-primary">Edit Detail Jabatan</a>
                 </div>
                 <!-- <td><a href="<?php echo base_url()?>user/detail_jabatan/<?php echo $m['jabatan']?>"<b><?php echo $m['jabatan'];?></b></a></td> -->
             </div>
@@ -139,7 +139,7 @@
                 <div style="margin-bottom: 5px; margin-right: 25px">
                    <!--  <a href="<?php echo base_url()?>admin/job_del/<?php echo $g->jabatan?>"class="btn btn-round btn-danger" data-toggle="modal" data-target="#myModalJabatan" style="color: white">Hapus Jabatan</a>  -->
 
-                    <a href="<?php echo base_url().'admin/job_del/'.$g->jabatan?>">
+                    <a href="<?php echo base_url().'admin/job_del/'.$g->idjab?>">
                         <button type="button" class="btn btn-round btn-danger" ata-toggle="modal" data-target="#myModalJabatan" style="color: white">Hapus Jabatan</button>
                     </a>
                 </div>

@@ -19,10 +19,14 @@
 		                      	<th>Nama SOP</th>
 		                    </thead>
 		                    <tbody>
-		                    	<?php foreach ($data as $m) { ?>
+		                    	<?php 
+		                    	$i = 0;
+		                    	foreach ($data as $m)  { $i++; ?>
+		                    		
 		                     	<tr>
-		                     		<td><a href="<?php echo base_url()?>user/detail_sop/<?php echo $m['namasop']?>"<b>SOP <?php echo $m['idsop'];?></b></a></td>
-		                     		<td><a href="<?php echo base_url()?>user/detail_sop/<?php echo $m['namasop']?>"<b><?php echo $m['namasop'];?></b></a></td>
+		                     		
+		                     		<td><a href="<?php echo base_url()?>user/detail_sop/<?php echo $m['idsop']?>"<b>SOP <?php echo $i;?></b></a></td>
+		                     		<td><a href="<?php echo base_url()?>user/detail_sop/<?php echo $m['idsop']?>"<b><?php echo $m['namasop'];?></b></a></td>
 		                     	</tr>
 		                     <?php } ?>
 		                    </tbody>

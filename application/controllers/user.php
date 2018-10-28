@@ -28,10 +28,10 @@ class user extends CI_Controller {
 		$this->load->view('user/footer');
 	}
 
-	public function detail_jabatan($jabatan)
+	public function detail_jabatan($idjab)
 	{
-		$data["jabatan"]=$jabatan;
-		$data['GetJobSpes'] = $this-> SopJob ->GetJobSpes($jabatan);
+		// $data["idjab"]=$idjab;
+		$data['GetJobSpes'] = $this-> SopJob ->GetJobSpes($idjab);
 
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
@@ -47,10 +47,9 @@ class user extends CI_Controller {
 		$this->load->view('user/footer');
 	}
 
-	public function edit_jabatan($jabatan)
+	public function edit_jabatan($idjab)
 	{
-		$data["jabatan"]=$jabatan;
-		$data['GetJobSpes'] = $this-> SopJob ->GetJobSpes($jabatan);
+		$data['GetJobSpes'] = $this-> SopJob ->GetJobSpes($idjab);
 
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
@@ -77,10 +76,9 @@ class user extends CI_Controller {
 		$this->load->view('user/footer');
 	}
 
-	public function detail_sop($namasop)
+	public function detail_sop($idsop)
 	{
-		$data["namasop"]=$namasop;
-		$data['GetSopSpes'] = $this-> SopJob ->GetSopSpes($namasop);
+		$data['GetSopSpes'] = $this-> SopJob ->GetSopSpes($idsop);
 
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
@@ -88,10 +86,9 @@ class user extends CI_Controller {
 		$this->load->view('user/footer');
 	}
 
-	public function edit_sop($namasop)
+	public function edit_sop($idsop)
 	{
-		$data["namasop"]=$namasop;
-		$data['GetSopSpes'] = $this-> SopJob ->GetSopSpes($namasop);
+		$data['GetSopSpes'] = $this-> SopJob ->GetSopSpes($idsop);
 		$this->load->view('user/sidebar');
 		$this->load->view('user/header');
 		$this->load->view('user/edit_sop', $data);
